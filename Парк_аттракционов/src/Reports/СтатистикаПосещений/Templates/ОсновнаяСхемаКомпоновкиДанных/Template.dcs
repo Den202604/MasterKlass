@@ -7,16 +7,8 @@
 	<dataSet xsi:type="DataSetQuery">
 		<name>НаборДанных1</name>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>Период</dataPath>
-			<field>Период</field>
-			<role>
-				<dcscom:periodNumber>1</dcscom:periodNumber>
-				<dcscom:periodType>Main</dcscom:periodType>
-			</role>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Аттракцион</dataPath>
-			<field>Аттракцион</field>
+			<dataPath>ВидАттракциона</dataPath>
+			<field>ВидАттракциона</field>
 			<role>
 				<dcscom:dimension>true</dcscom:dimension>
 			</role>
@@ -48,17 +40,25 @@
 			</role>
 		</field>
 		<field xsi:type="DataSetFieldField">
+			<dataPath>Период</dataPath>
+			<field>Период</field>
+			<role>
+				<dcscom:periodNumber>1</dcscom:periodNumber>
+				<dcscom:periodType>Main</dcscom:periodType>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
 			<dataPath>Основание</dataPath>
 			<field>Основание</field>
 		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
-	АктивныеПосещенияОстаткиИОбороты.Период КАК Период,
-	АктивныеПосещенияОстаткиИОбороты.Аттракцион КАК Аттракцион,
-	АктивныеПосещенияОстаткиИОбороты.КоличествоПосещенийНачальныйОстаток КАК КоличествоПосещенийНачальныйОстаток,
-	АктивныеПосещенияОстаткиИОбороты.КоличествоПосещенийПриход КАК КоличествоПосещенийПриход,
-	АктивныеПосещенияОстаткиИОбороты.КоличествоПосещенийРасход КАК КоличествоПосещенийРасход,
-	АктивныеПосещенияОстаткиИОбороты.КоличествоПосещенийКонечныйОстаток КАК КоличествоПосещенийКонечныйОстаток
+	АктивныеПосещенияОстаткиИОбороты.ВидАттракциона,
+	АктивныеПосещенияОстаткиИОбороты.КоличествоПосещенийНачальныйОстаток,
+	АктивныеПосещенияОстаткиИОбороты.КоличествоПосещенийПриход,
+	АктивныеПосещенияОстаткиИОбороты.КоличествоПосещенийРасход,
+	АктивныеПосещенияОстаткиИОбороты.КоличествоПосещенийКонечныйОстаток,
+	АктивныеПосещенияОстаткиИОбороты.Период
 ИЗ
 	РегистрНакопления.АктивныеПосещения.ОстаткиИОбороты(,, День,,) КАК АктивныеПосещенияОстаткиИОбороты</query>
 	</dataSet>
@@ -95,7 +95,6 @@
 		<value xsi:nil="true"/>
 		<useRestriction>true</useRestriction>
 		<expression>&amp;Период.ДатаНачала</expression>
-		<availableAsField>false</availableAsField>
 	</parameter>
 	<parameter>
 		<name>КонецПериода</name>
@@ -171,6 +170,18 @@
 					</dcsset:lwsTitle>
 				</dcsset:item>
 			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Период</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardPeriod">
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</dcscor:value>
+					<dcsset:userSettingID>b23066ff-132c-48f6-9595-57a548ac098a</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
 			<dcsset:item xsi:type="dcsset:StructureItemGroup">
 				<dcsset:groupItems>
 					<dcsset:item xsi:type="dcsset:GroupItemField">
@@ -190,7 +201,7 @@
 				<dcsset:item xsi:type="dcsset:StructureItemGroup">
 					<dcsset:groupItems>
 						<dcsset:item xsi:type="dcsset:GroupItemField">
-							<dcsset:field>Аттракцион</dcsset:field>
+							<dcsset:field>ВидАттракциона</dcsset:field>
 							<dcsset:groupType>Items</dcsset:groupType>
 							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
 							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>

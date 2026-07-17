@@ -27,23 +27,9 @@
 		</right>
 	</object>
 	<object>
-		<name>Document.ПродажаБилетов</name>
-		<right>
-			<name>InteractiveDelete</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>Document.ПосещениеАттракциона</name>
 		<right>
 			<name>InteractiveDelete</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>Document.ПродажаБилетов.Command.Билет</name>
-		<right>
-			<name>View</name>
 			<value>false</value>
 		</right>
 	</object>

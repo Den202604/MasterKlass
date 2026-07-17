@@ -7,8 +7,8 @@
 	<dataSet xsi:type="DataSetQuery">
 		<name>НаборДанных1</name>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>Аттракцион</dataPath>
-			<field>Аттракцион</field>
+			<dataPath>ВидАттракциона</dataPath>
+			<field>ВидАттракциона</field>
 			<role>
 				<dcscom:dimension>true</dcscom:dimension>
 			</role>
@@ -19,8 +19,8 @@
 		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
-	ПродажиОбороты.Аттракцион КАК Аттракцион,
-	ПродажиОбороты.СуммаОборот КАК СуммаОборот
+	ПродажиОбороты.ВидАттракциона,
+	ПродажиОбороты.СуммаОборот
 ИЗ
 	РегистрНакопления.Продажи.Обороты КАК ПродажиОбороты</query>
 	</dataSet>
@@ -45,7 +45,6 @@
 		<value xsi:nil="true"/>
 		<useRestriction>true</useRestriction>
 		<expression>&amp;Период.ДатаНачала</expression>
-		<availableAsField>false</availableAsField>
 	</parameter>
 	<parameter>
 		<name>КонецПериода</name>
@@ -64,7 +63,6 @@
 		<value xsi:nil="true"/>
 		<useRestriction>true</useRestriction>
 		<expression>&amp;Период.ДатаОкончания</expression>
-		<availableAsField>false</availableAsField>
 	</parameter>
 	<parameter>
 		<name>Период</name>
@@ -86,7 +84,7 @@
 		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
 			<dcsset:selection>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>Аттракцион</dcsset:field>
+					<dcsset:field>ВидАттракциона</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>СуммаОборот</dcsset:field>
@@ -97,16 +95,19 @@
 					<dcscor:use>false</dcscor:use>
 					<dcscor:parameter>НачалоПериода</dcscor:parameter>
 					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>05195bea-2b8b-48e5-b18e-ad51cb73dea9</dcsset:userSettingID>
 				</dcscor:item>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:use>false</dcscor:use>
 					<dcscor:parameter>КонецПериода</dcscor:parameter>
 					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>b5228c54-d704-4596-aa2b-9b08ddeb5638</dcsset:userSettingID>
 				</dcscor:item>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
 					<dcscor:parameter>Период</dcscor:parameter>
 					<dcscor:value xsi:nil="true"/>
-					<dcsset:userSettingID>56df609b-3baf-405e-8211-a37e42437f49</dcsset:userSettingID>
+					<dcsset:userSettingID>11f0c844-19e0-499c-aaa3-c5846b2ea445</dcsset:userSettingID>
 				</dcscor:item>
 			</dcsset:dataParameters>
 			<dcsset:item xsi:type="dcsset:StructureItemGroup">

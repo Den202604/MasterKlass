@@ -7,13 +7,13 @@
     <listType typeId="d1595b76-4f78-471d-8f1e-ff4a84cc58a9" valueTypeId="6d600d71-6de2-4eb0-ad6a-805761c39276"/>
     <managerType typeId="37a5243b-d9f2-4ac3-817b-abfd507513c7" valueTypeId="7ab14a6c-200a-4d03-99f4-65cec8fc143b"/>
   </producedTypes>
-  <name>ПродажаБилетов</name>
+  <name>ПродажаБилета</name>
   <synonym>
     <key>ru</key>
-    <value>Продажа билетов</value>
+    <value>Продажа билета</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
-  <inputByString>Document.ПродажаБилетов.StandardAttribute.Number</inputByString>
+  <inputByString>Document.ПродажаБилета.StandardAttribute.Number</inputByString>
   <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
   <createOnInput>Use</createOnInput>
   <dataLockControlMode>Managed</dataLockControlMode>
@@ -27,22 +27,29 @@
   <numberAllowedLength>Variable</numberAllowedLength>
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ПродажаБилета.Form.ФормаДокумента</defaultObjectForm>
   <registerRecords>AccumulationRegister.Продажи</registerRecords>
   <registerRecords>AccumulationRegister.АктивныеПосещения</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
-  <attributes uuid="4debae73-cc35-4934-ac48-b5572352c32f">
-    <name>Аттракцион</name>
+  <attributes uuid="1dcd76c5-df72-4a48-9914-3dbadbc09840">
+    <name>Номенклатура</name>
     <synonym>
       <key>ru</key>
-      <value>Аттракцион</value>
+      <value>Номенклатура</value>
     </synonym>
     <type>
-      <types>CatalogRef.Аттракционы</types>
+      <types>CatalogRef.Номенклатура</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillChecking>ShowError</fillChecking>
+    <choiceParameters>
+      <name>Отбор.ВидНоменклатуры</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Enum.ВидНоменклатуры.EnumValue.ПосещениеАттракциона</value>
+      </value>
+    </choiceParameters>
     <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
@@ -68,14 +75,23 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <templates uuid="8c5f5279-2d26-402e-a717-b8b0f8272987">
+  <forms uuid="d6ce886b-89e9-4e20-9068-7c6c6f1373d9">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="604a357b-b673-4926-b71a-76131260b333">
     <name>Билет</name>
   </templates>
-  <commands uuid="d8391140-a1f9-4373-9f60-24a2b6bac579">
+  <commands uuid="8f4a9998-5a10-433a-a493-6e03e5336a35">
     <name>Билет</name>
     <group>FormCommandBarImportant</group>
     <commandParameterType>
-      <types>DocumentRef.ПродажаБилетов</types>
+      <types>DocumentRef.ПродажаБилета</types>
     </commandParameterType>
     <parameterUseMode>Multiple</parameterUseMode>
     <representation>Auto</representation>

@@ -39,21 +39,21 @@
       <value>Основание</value>
     </synonym>
     <type>
-      <types>DocumentRef.ПродажаБилетов</types>
+      <types>DocumentRef.ПродажаБилета</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <useInTotals>true</useInTotals>
   </dimensions>
-  <dimensions uuid="7da80aba-a837-47ae-9a90-59341ad36772">
-    <name>Аттракцион</name>
+  <dimensions uuid="462f03e7-95a1-4c32-9bbd-52edf8030440">
+    <name>ВидАттракциона</name>
     <synonym>
       <key>ru</key>
-      <value>Аттракцион</value>
+      <value>Вид аттракциона</value>
     </synonym>
     <type>
-      <types>CatalogRef.Аттракционы</types>
+      <types>CatalogRef.ВидыАттракционов</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

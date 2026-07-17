@@ -7,7 +7,7 @@
   <name>ПродажиПоАттракционам</name>
   <synonym>
     <key>ru</key>
-    <value>Продажи по Аттракционам</value>
+    <value>Продажи по аттракционам</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <mainDataCompositionSchema>Report.ПродажиПоАттракционам.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>

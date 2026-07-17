@@ -19,7 +19,7 @@
 		</columnsItem>
 	</columns>
 	<columns>
-		<id>3b58645c-68b1-41ee-a2ff-0ca9bd0c32f4</id>
+		<id>8175093f-afbf-427a-81b3-a06f68ff9591</id>
 		<size>2</size>
 		<columnsItem>
 			<index>0</index>
@@ -35,7 +35,7 @@
 		</columnsItem>
 	</columns>
 	<columns>
-		<id>e533d045-3170-485e-98dc-987318da019c</id>
+		<id>51731a52-0254-40ef-9fb8-b2f76537bb6d</id>
 		<size>4</size>
 		<columnsItem>
 			<index>0</index>
@@ -71,7 +71,7 @@
 	<rowsItem>
 		<index>1</index>
 		<row>
-			<columnsID>3b58645c-68b1-41ee-a2ff-0ca9bd0c32f4</columnsID>
+			<columnsID>8175093f-afbf-427a-81b3-a06f68ff9591</columnsID>
 			<c>
 				<i>1</i>
 				<c>
@@ -79,7 +79,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Билет № [Номер] от [Дата]</v8:content>
+							<v8:content>Билет №[Номер] от [Дата]</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -96,7 +96,7 @@
 	<rowsItem>
 		<index>4</index>
 		<row>
-			<columnsID>e533d045-3170-485e-98dc-987318da019c</columnsID>
+			<columnsID>51731a52-0254-40ef-9fb8-b2f76537bb6d</columnsID>
 			<c>
 				<i>1</i>
 				<c>
@@ -104,7 +104,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Аттракцион:</v8:content>
+							<v8:content>Тип билета:</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -112,7 +112,7 @@
 			<c>
 				<c>
 					<f>8</f>
-					<parameter>Аттракцион</parameter>
+					<parameter>Номенклатура</parameter>
 				</c>
 			</c>
 			<c>
@@ -125,7 +125,7 @@
 	<rowsItem>
 		<index>5</index>
 		<row>
-			<columnsID>e533d045-3170-485e-98dc-987318da019c</columnsID>
+			<columnsID>51731a52-0254-40ef-9fb8-b2f76537bb6d</columnsID>
 			<c>
 				<i>1</i>
 				<c>
@@ -133,7 +133,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Сумма документа</v8:content>
+							<v8:content>Количеество посещений:</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -141,14 +141,38 @@
 			<c>
 				<c>
 					<f>11</f>
+					<parameter>КоличествоПосещений</parameter>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>6</index>
+		<row>
+			<columnsID>51731a52-0254-40ef-9fb8-b2f76537bb6d</columnsID>
+			<c>
+				<i>1</i>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма документа:</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>13</f>
 					<parameter>СуммаДокумента</parameter>
 				</c>
 			</c>
 		</row>
 	</rowsItem>
 	<templateMode>true</templateMode>
-	<height>6</height>
-	<vgRows>6</vgRows>
+	<height>7</height>
+	<vgRows>7</vgRows>
 	<merge>
 		<r>4</r>
 		<c>2</c>
@@ -169,13 +193,13 @@
 		<area>
 			<type>Rows</type>
 			<beginRow>3</beginRow>
-			<endRow>5</endRow>
+			<endRow>6</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
 	</namedItem>
 	<font faceName="Arial" height="16" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
-	<font faceName="Arial" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+	<font faceName="Arial" height="14" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
 	<format>
 		<width>16</width>
 	</format>
@@ -183,7 +207,7 @@
 		<width>640</width>
 	</format>
 	<format>
-		<width>128</width>
+		<width>162</width>
 	</format>
 	<format>
 		<width>144</width>
@@ -213,6 +237,22 @@
 	</format>
 	<format>
 		<font>1</font>
+	</format>
+	<format>
+		<width>144</width>
+		<verticalAlignment>Top</verticalAlignment>
+		<textPlacement>Wrap</textPlacement>
+		<fillType>Text</fillType>
+		<autoIndent>0</autoIndent>
+	</format>
+	<format>
+		<width>144</width>
+		<horizontalAlignment>Right</horizontalAlignment>
+		<verticalAlignment>Top</verticalAlignment>
+		<textPlacement>Block</textPlacement>
+		<fillType>Parameter</fillType>
+		<format/>
+		<autoIndent>0</autoIndent>
 	</format>
 	<format>
 		<verticalAlignment>Top</verticalAlignment>

@@ -10,7 +10,7 @@
   <name>ПосещениеАттракциона</name>
   <synonym>
     <key>ru</key>
-    <value>Посещение Аттракциона</value>
+    <value>Посещение аттракциона</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <inputByString>Document.ПосещениеАттракциона.StandardAttribute.Number</inputByString>
@@ -49,7 +49,7 @@
       <value>Основание</value>
     </synonym>
     <type>
-      <types>DocumentRef.ПродажаБилетов</types>
+      <types>DocumentRef.ПродажаБилета</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
