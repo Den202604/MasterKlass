@@ -3,9 +3,9 @@
   <name>УправлениеПаркомАттракционов</name>
   <synonym>
     <key>ru</key>
-    <value>Управление парком аттракционов День 3</value>
+    <value>Управление парком аттракционов День 4</value>
   </synonym>
-  <comment>День 3</comment>
+  <comment>День 4</comment>
   <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="40f9c57f-30b2-44bb-8d36-1ff2ee5764a8"/>
   <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="0aba2cfa-bd1e-43e4-9735-d20c8bb450df"/>
   <containedObjects classId="e3687481-0a87-462c-a166-9f34594f9bba" objectId="435c8d5b-a88b-4059-ad24-d43bb2235165"/>
@@ -18,7 +18,7 @@
   <usePurposes>PersonalComputer</usePurposes>
   <scriptVariant>Russian</scriptVariant>
   <vendor>Фирма 1С</vendor>
-  <version>1.0.0.1</version>
+  <version>1.0.0.2</version>
   <usedMobileApplicationFunctionalities>
     <functionality>
       <use>true</use>
@@ -62,6 +62,8 @@
   <enums>Enum.ВидНоменклатуры</enums>
   <reports>Report.ПродажиПоАттракционам</reports>
   <reports>Report.СтатистикаПосещений</reports>
+  <dataProcessors>DataProcessor.ПереходНаНовыеВерсии</dataProcessors>
+  <dataProcessors>DataProcessor.РабочееМестоКассира</dataProcessors>
   <informationRegisters>InformationRegister.АктуальнаяШкалаБонуснойПрограммы</informationRegisters>
   <informationRegisters>InformationRegister.ЦеныНоменклатуры</informationRegisters>
   <accumulationRegisters>AccumulationRegister.АктивныеПосещения</accumulationRegisters>
