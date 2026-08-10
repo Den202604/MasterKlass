@@ -4,52 +4,6 @@
 	<setForAttributesByDefault>true</setForAttributesByDefault>
 	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
 	<object>
-		<name>AccumulationRegister.БонусныеБаллыКлиентов</name>
-		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>AccumulationRegister.БонусныеБаллыКлиентов.StandardAttribute.RecordType</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>AccumulationRegister.БонусныеБаллыКлиентов.StandardAttribute.Active</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>AccumulationRegister.БонусныеБаллыКлиентов.StandardAttribute.LineNumber</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>AccumulationRegister.БонусныеБаллыКлиентов.StandardAttribute.Recorder</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>AccumulationRegister.БонусныеБаллыКлиентов.StandardAttribute.Period</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>Catalog.Клиенты</name>
 		<right>
 			<name>Read</name>
@@ -149,13 +103,6 @@
 		</right>
 	</object>
 	<object>
-		<name>AccumulationRegister.БонусныеБаллыКлиентов.Dimension.Клиент</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>Catalog.Номенклатура</name>
 		<right>
 			<name>Read</name>
@@ -213,13 +160,6 @@
 		<right>
 			<name>View</name>
 			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>AccumulationRegister.БонусныеБаллыКлиентов.Resource.Сумма</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
 		</right>
 	</object>
 </Rights>

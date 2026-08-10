@@ -3,9 +3,9 @@
   <name>УправлениеПаркомАттракционов</name>
   <synonym>
     <key>ru</key>
-    <value>Управление парком аттракционов День 5</value>
+    <value>Управление парком аттракционов День 6</value>
   </synonym>
-  <comment>День 5</comment>
+  <comment>День 6</comment>
   <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="40f9c57f-30b2-44bb-8d36-1ff2ee5764a8"/>
   <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="0aba2cfa-bd1e-43e4-9735-d20c8bb450df"/>
   <containedObjects classId="e3687481-0a87-462c-a166-9f34594f9bba" objectId="435c8d5b-a88b-4059-ad24-d43bb2235165"/>
@@ -37,7 +37,7 @@
   <objectAutonumerationMode>NotAutoFree</objectAutonumerationMode>
   <modalityUseMode>DontUse</modalityUseMode>
   <synchronousPlatformExtensionAndAddInCallUseMode>DontUse</synchronousPlatformExtensionAndAddInCallUseMode>
-  <compatibilityMode>8.3.27</compatibilityMode>
+  <compatibilityMode>8.3.22</compatibilityMode>
   <languages uuid="396b569a-785b-48dc-b8d6-1ad801b007cc">
     <name>Русский</name>
     <synonym>
